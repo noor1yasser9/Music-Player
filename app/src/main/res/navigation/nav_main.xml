@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.nurbk.ps.musicplayer.ui.fragment.MainFragment"
+        android:label="MainFragment" />
+    <fragment
+        android:id="@+id/albumFragment"
+        android:name="com.nurbk.ps.musicplayer.ui.fragment.AlbumFragment"
+        android:label="AlbumFragment" />
+    <fragment
+        android:id="@+id/songsFragment"
+        android:name="com.nurbk.ps.musicplayer.ui.fragment.SongsFragment"
+        android:label="SongsFragment" />
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.nurbk.ps.musicplayer.ui.fragment.PlayerFragment"
+        android:label="PlayFragment" />
+
+    <fragment
+        android:id="@+id/albumDetailsFragment"
+        android:name="com.nurbk.ps.musicplayer.ui.fragment.AlbumDetailsFragment"
+        android:label="AlbumDetailsFragment" />
+
+    <action
+        android:id="@+id/globalActionToSongFragment"
+        app:destination="@id/playFragment"
+        app:enterAnim="@anim/slide_up"
+        app:exitAnim="@anim/slide_down"
+        app:popEnterAnim="@anim/slide_up"
+        app:popExitAnim="@anim/slide_down" />
+
+    <action
+        android:id="@+id/globalActionToAlbumDetailsFragment"
+        app:destination="@id/albumDetailsFragment"
+        app:enterAnim="@anim/slide_up"
+        app:exitAnim="@anim/slide_down"
+        app:popEnterAnim="@anim/slide_up"
+        app:popExitAnim="@anim/slide_down" />
+</navigation>

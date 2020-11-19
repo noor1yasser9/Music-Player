@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:textColor="#E7DBDB"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:id="@+id/text_song" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
